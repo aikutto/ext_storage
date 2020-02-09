@@ -21,7 +21,7 @@ class ExtStoragePlugin: MethodCallHandler {
       "getExternalStorageDirectory" ->
         result.success(Environment.getExternalStorageDirectory().toString());
       "getExternalStoragePublicDirectory" ->
-        result.success(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).toString());
+        result.success(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC).toString());
       else -> result.notImplemented()
     }
   }
